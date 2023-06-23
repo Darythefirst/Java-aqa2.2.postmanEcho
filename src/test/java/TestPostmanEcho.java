@@ -9,7 +9,6 @@ public class TestPostmanEcho {
         // Given - When - Then
         // Предусловия
         // Given - When - Then
-// Предусловия
         given()
                 .baseUri("https://postman-echo.com")
                 .body("Hello")
@@ -17,7 +16,7 @@ public class TestPostmanEcho {
                 .post("/post")
                 .then()
                 .statusCode(200)
-                .body("data",equalTo("Hallo"))
+                .body("data",equalTo("Hello"))
         ;
     }
 }
